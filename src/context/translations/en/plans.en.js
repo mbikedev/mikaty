@@ -1,0 +1,22 @@
+export const en_plans = {
+  plansSectionTitle: "Choose your plan",
+  planStandardTitle: "Standard",
+  planStandardPrice: "0 FCFA",
+  planStandardDescription: "Get started with essential features for everyday banking. Free account, basic transfers, and access to customer support.",
+  planPlusTitle: "Plus",
+  planPlusPrice: "2,500 FCFA / month",
+  planPlusDescription: "More features for growing needs. Higher transfer limits, budgeting tools, and priority support.",
+  planPremiumTitle: "Premium",
+  planPremiumPrice: "7,500 FCFA / month",
+  planPremiumDescription: "Unlock the full Mikaty experience. All features, plus exclusive perks and personalized financial advice.",
+  planMetalTitle: "Metal",
+  planMetalPrice: "15,000 FCFA / month",
+  planMetalDescription: "The ultimate banking experience. Premium metal card, highest limits, global travel insurance, and concierge services.",
+  planUltraTitle: "Ultra",
+  planUltraPrice: "Contact Us",
+  planUltraDescription: "Bespoke financial services for discerning clients. Tailored solutions, dedicated wealth management, and exclusive event access.",
+
+  subscriptionSectionTagline: "VIRTUAL CARDS | 0 FCFA PER CARD",
+  subscriptionSectionTitle: "Pay for your Netflix, Spotify subscriptions, advertising on Facebook, Google, Tiktok etc... with the Mikaty Visa card",
+  subscriptionSectionDescription: "Get virtual bank cards instantly and securely for all your online payments. No hidden fees, full control.",
+};
