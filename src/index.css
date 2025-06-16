@@ -1,0 +1,197 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --background: 0 0% 100%;
+        --foreground: 224 71.4% 4.1%;
+        --card: 0 0% 100%;
+        --card-foreground: 224 71.4% 4.1%;
+        --popover: 0 0% 100%;
+        --popover-foreground: 224 71.4% 4.1%;
+        --primary: 262.1 83.3% 57.8%; /* Purple */
+        --primary-foreground: 0 0% 98%;
+        --primary-rgb: 112, 12, 211; /* RGB for primary color */
+        --secondary: 220 14.3% 95.9%;
+        --secondary-foreground: 220 8.9% 46.1%;
+        --muted: 220 14.3% 95.9%;
+        --muted-foreground: 220 8.9% 46.1%;
+        --accent: 220 14.3% 95.9%;
+        --accent-foreground: 220 8.9% 46.1%;
+        --destructive: 0 84.2% 60.2%;
+        --destructive-foreground: 0 0% 98%;
+        --border: 220 13% 91%;
+        --input: 220 13% 91%;
+        --ring: 262.1 83.3% 57.8%; /* Purple for ring */
+        --radius: 0.75rem; /* Increased default radius */
+
+        --chart-1: 262 83% 58%; /* primary */
+        --chart-2: 180 70% 45%; /* teal */
+        --chart-3: 30 90% 55%; /* orange */
+        --chart-4: 220 75% 65%; /* blue */
+        --chart-5: 0 80% 60%; /* red */
+    }
+
+    .dark {
+        --background: 224 71.4% 4.1%;
+        --foreground: 0 0% 98%;
+        --card: 224 71.4% 4.1%;
+        --card-foreground: 0 0% 98%;
+        --popover: 224 71.4% 4.1%;
+        --popover-foreground: 0 0% 98%;
+        --primary: 262.1 83.3% 57.8%; /* Purple */
+        --primary-foreground: 0 0% 98%;
+        --primary-rgb: 112, 12, 211;
+        --secondary: 215 27.9% 16.9%;
+        --secondary-foreground: 0 0% 98%;
+        --muted: 215 27.9% 16.9%;
+        --muted-foreground: 215 20.2% 65.1%;
+        --accent: 215 27.9% 16.9%;
+        --accent-foreground: 0 0% 98%;
+        --destructive: 0 62.8% 30.6%;
+        --destructive-foreground: 0 0% 98%;
+        --border: 215 27.9% 16.9%;
+        --input: 215 27.9% 16.9%;
+        --ring: 262.1 83.3% 57.8%; /* Purple for ring */
+
+        --chart-1: 262 83% 68%;
+        --chart-2: 180 70% 55%;
+        --chart-3: 30 90% 65%;
+        --chart-4: 220 75% 75%;
+        --chart-5: 0 80% 70%;
+    }
+}
+
+@layer base {
+    * {
+        @apply border-border;
+    }
+
+    body {
+        @apply bg-background text-foreground;
+        font-feature-settings: "rlig" 1, "calt" 1;
+    }
+
+    html, body {
+        @apply h-full;
+    }
+
+    body {
+        @apply antialiased;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+}
+
+/* Custom scrollbar styles */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    @apply bg-secondary/50 dark:bg-secondary/30;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    @apply bg-primary/70 rounded-full;
+    border: 2px solid transparent;
+    background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    @apply bg-primary;
+}
+
+/* Gradient text utility */
+.gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary via-purple-500 to-pink-500;
+}
+
+.dark .gradient-text {
+    @apply bg-gradient-to-r from-primary via-purple-400 to-pink-400;
+}
+
+/* Gradient background utility */
+.gradient-bg {
+    @apply bg-gradient-to-r from-primary via-purple-600 to-purple-700 text-primary-foreground;
+}
+
+.dark .gradient-bg {
+    @apply bg-gradient-to-r from-primary via-purple-500 to-purple-600;
+}
+
+/* Text shadow utility */
+.text-shadow {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dark .text-shadow {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.text-shadow-primary {
+    text-shadow: 0 2px 5px rgba(var(--primary-rgb), 0.3);
+}
+
+/* Swiper custom pagination styles */
+
+/* Swiper navigation button custom styles */
+
+@media (max-width: 768px) {
+}
+
+/* Ensure Swiper slides take full height for consistent card appearance */
+
+/* Fix for Framer Motion and Swiper conflict if any */
+.swiper-slide > div {
+    width: 100%;
+}
+
+/* Gradient button specific style for the chat prompt */
+
+/* Hero pattern background for specific sections */
+.hero-pattern {
+    background-image: radial-gradient(circle at 20% 20%, rgba(var(--primary-rgb), 0.1) 0%, transparent 30%),
+    radial-gradient(circle at 80% 80%, rgba(var(--primary-rgb), 0.05) 0%, transparent 25%);
+    background-color: hsl(var(--background));
+}
+
+.dark .hero-pattern {
+    background-image: radial-gradient(circle at 20% 20%, rgba(var(--primary-rgb), 0.15) 0%, transparent 30%),
+    radial-gradient(circle at 80% 80%, rgba(var(--primary-rgb), 0.1) 0%, transparent 25%);
+    background-color: hsl(var(--background));
+}
+
+/* Card gradient hover effect */
+.card-gradient-hover {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/*noinspection ALL*/
+.card-gradient-hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*noinspection CssUnresolvedCustomProperty*/
+    background: radial-gradient(circle at var(--mouse-x) var(--mouse-y), rgba(var(--primary-rgb), 0.15) 0%, transparent 40%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: 0;
+}
+
+.card-gradient-hover:hover::before {
+    opacity: 1;
+}
+
+.card-gradient-hover > * {
+    position: relative;
+    z-index: 1;
+}

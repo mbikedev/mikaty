@@ -1,0 +1,23 @@
+node_modules
+node_modules
+
+# Temporary files
+*.tmp
+*.temp
+*_temp.*
+
+# Downloaded tools
+media_tools/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
