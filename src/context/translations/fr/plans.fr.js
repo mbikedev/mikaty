@@ -1,0 +1,22 @@
+export const fr_plans = {
+  plansSectionTitle: "Choisissez votre forfait",
+  planStandardTitle: "Standard",
+  planStandardPrice: "0 FCFA",
+  planStandardDescription: "Commencez avec les fonctionnalités essentielles pour les opérations bancaires quotidiennes. Compte gratuit, virements de base et accès au support client.",
+  planPlusTitle: "Plus",
+  planPlusPrice: "2 500 FCFA / mois",
+  planPlusDescription: "Plus de fonctionnalités pour des besoins croissants. Limites de virement plus élevées, outils de budgétisation et support prioritaire.",
+  planPremiumTitle: "Premium",
+  planPremiumPrice: "7 500 FCFA / mois",
+  planPremiumDescription: "Débloquez l'expérience Mikaty complète. Toutes les fonctionnalités, plus des avantages exclusifs et des conseils financiers personnalisés.",
+  planMetalTitle: "Metal",
+  planMetalPrice: "15 000 FCFA / mois",
+  planMetalDescription: "L'expérience bancaire ultime. Carte métallique premium, limites les plus élevées, assurance voyage mondiale et services de conciergerie.",
+  planUltraTitle: "Ultra",
+  planUltraPrice: "Nous contacter",
+  planUltraDescription: "Services financiers sur mesure pour clients exigeants. Solutions personnalisées, gestion de patrimoine dédiée et accès exclusif à des événements.",
+
+  subscriptionSectionTagline: "CARTES VIRTUELLES | 0 FCFA PAR CARTE",
+  subscriptionSectionTitle: "Payez vos abonnements Netflix, Spotify, publicités sur Facebook, Google, Tiktok etc... avec la carte Visa Mikaty",
+  subscriptionSectionDescription: "Obtenez des cartes bancaires virtuelles instantanément et en toute sécurité pour tous vos paiements en ligne. Pas de frais cachés, contrôle total.",
+};

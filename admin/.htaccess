@@ -1,0 +1,24 @@
+# Enable PHP processing
+<FilesMatch "\.php$">
+    SetHandler application/x-httpd-php
+</FilesMatch>
+
+# Allow direct access to PHP files
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /admin/
+    
+    # Allow direct access to PHP files
+    RewriteCond %{REQUEST_FILENAME} -f
+    RewriteRule ^ - [L]
+    
+    # Allow access to API directory
+    RewriteRule ^api/ - [L]
+</IfModule>
+
+# Set security headers
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set X-XSS-Protection "1; mode=block"
+</IfModule> 
