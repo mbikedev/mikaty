@@ -33,7 +33,7 @@ A modern web application for managing financial services, built with React and V
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/mikaty.git
+git clone https://github.com/mbikedev/mikaty.git
 cd mikaty
 ```
 
@@ -87,5 +87,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 
-Your Name - [@yourtwitter](https://twitter.com/yourtwitter)
-Project Link: [https://github.com/yourusername/mikaty](https://github.com/yourusername/mikaty) 
+Your Name - [@linkedin](https://www.linkedin.com/company/mikatyofficial/)
+Project Link: [https://github.com/mbikedev/mikaty](https://github.com/yourusername/mikaty) 

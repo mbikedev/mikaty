@@ -60,7 +60,7 @@ const RegistrationPopup = ({isOpen, onClose}) => {
                                     {t.waitingListPopupTitle || "Join Mikaty Waiting List"}
                                 </DialogTitle>
                                 <DialogDescription className="text-foreground/70 dark:text-foreground/60 mt-2">
-                                    {t.waitingListPopupDescription || "Be among the first adopters of the Mikaty app and unlock exclusive benefits and take full control of your finances."}
+                                    {t.waitingListPopupDescription || "Be the first to hear about Mikaty's latest news."}
                                 </DialogDescription>
                             </DialogHeader>
 
@@ -68,7 +68,7 @@ const RegistrationPopup = ({isOpen, onClose}) => {
                                 <Link to="/register" className="block" onClick={onClose}>
                                     <Button className="w-full gradient-bg text-primary-foreground h-12 text-base">
                                         <ListPlus className="mr-2 h-5 w-5"/>
-                                        {t.waitingListPopupButton || "Join the waiting list now"}
+                                        {t.waitingListPopupButton || "Join Mikaty's Newsletter  "}
                                     </Button>
                                 </Link>
                                 <Button variant="outline" onClick={onClose} className="w-full h-12 text-base">

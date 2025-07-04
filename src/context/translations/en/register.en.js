@@ -37,7 +37,7 @@ export const en_register = {
   agreeToTerms: "I agree to the",
   termsAndConditions: "Terms & Conditions",
   
-  joinWaitingListButton: "Join Waiting List",
+  joinWaitingListButton: "Join Mikaty's Newsletter",
   joiningButtonText: "Joining...",
   waitingListInfoText: "We'll notify you via SMS when the app is ready!",
 

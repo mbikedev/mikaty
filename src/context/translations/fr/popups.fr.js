@@ -9,7 +9,7 @@ export const fr_popups = {
   popupRegisterButton: "S'inscrire Maintenant",
   popupMaybeLaterButton: "Peut-être Plus Tard",
 
-  waitingListPopupTitle: "Rejoignez la Liste d'Attente Mikaty",
-  waitingListPopupDescription: "Soyez parmi les premiers à adopter l'application Mikaty, débloquez des avantages exclusifs et prenez le contrôle total de vos finances.",
-  waitingListPopupButton: "Rejoindre la liste d'attente maintenant",
+  waitingListPopupTitle: "Rejoignez la Newsletter de Mikaty",
+  waitingListPopupDescription: "Soyez le premier à entendre les dernières nouvelles de Mikaty.",
+  waitingListPopupButton: "Rejoindre la Newsletter maintenant",
 };

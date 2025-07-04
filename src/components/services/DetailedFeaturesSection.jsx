@@ -17,11 +17,14 @@ const DetailedFeaturesSection = () => {
     { icon: <Send className="h-8 w-8 text-purple-400" />, titleKey: "services_detail_feat3_title", descriptionKey: "services_detail_feat3_desc", link: "/services/zero-cost-transfers" },
     { icon: <ShoppingCart className="h-8 w-8 text-purple-400" />, titleKey: "services_detail_feat4_title", descriptionKey: "services_detail_feat4_desc", link: "/services/shop-online" },
     { icon: <Store className="h-8 w-8 text-purple-400" />, titleKey: "services_detail_feat5_title", descriptionKey: "services_detail_feat5_desc", link: "/services/pay-in-stores" },
-    { icon: <FileText className="h-8 w-8 text-purple-400" />, titleKey: "services_detail_feat6_title", descriptionKey: "services_detail_feat6_desc", link: "/services/bill-payments" },
+    { icon: <FileText className="h-8 w-8 text-purple-400" />, titleKey: "services_detail_feat6_title", descriptionKey: "services_detail_feat6_desc", link: "/services/bill-payments", hidden: true },
     { icon: <Landmark className="h-8 w-8 text-purple-400" />, titleKey: "services_detail_feat7_title", descriptionKey: "services_detail_feat7_desc", link: "/services/bank-transfers-uemoa" },
     { icon: <Globe className="h-8 w-8 text-purple-400" />, titleKey: "services_detail_feat8_title", descriptionKey: "services_detail_feat8_desc", link: "/services/competitive-remittance-fees" },
     { icon: <HelpCircle className="h-8 w-8 text-purple-400" />, titleKey: "services_detail_feat9_title", descriptionKey: "services_detail_feat9_desc", link: "/services/request-money" },
   ];
+
+  // Filter out hidden features
+  const visibleFeatures = features.filter(feature => !feature.hidden);
 
   const sectionVariants = {
     hidden: { opacity: 0 },
@@ -58,7 +61,7 @@ const DetailedFeaturesSection = () => {
               whileInView="visible"
               viewport={{ once: true, amount: 0.1 }}
           >
-            {features.map((feature, index) => (
+            {visibleFeatures.map((feature, index) => (
                 <motion.div
                     key={index}
                     variants={itemVariants}

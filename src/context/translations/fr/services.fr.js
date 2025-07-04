@@ -74,4 +74,5 @@ export const fr_services = {
   services_detail_feat9_title: "Demander de l'Argent",
   services_detail_feat9_desc: "Demandez des fonds à des amis ou à de la famille à l'étranger.",
   services_detail_learn_more_button: "En Savoir Plus",
+  stayTunedButton: "Restez à l'Écoute",
 };

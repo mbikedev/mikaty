@@ -74,4 +74,5 @@ export const en_services = {
   services_detail_feat9_title: "Request Money",
   services_detail_feat9_desc: "Ask for funds from friends or family overseas.",
   services_detail_learn_more_button: "Learn More",
+  stayTunedButton: "Stay Tuned",
 };

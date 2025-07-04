@@ -50,7 +50,7 @@ const Footer = () => {
   const renderSocialIcons = () => (
     <div className="flex space-x-5 justify-center">
       <motion.a
-        href="https://facebook.com/mikaty"
+        href="https://www.facebook.com/share/1CMFHrEErA/?mibextid=wwXIfr"
         target="_blank"
         rel="noopener noreferrer"
         aria-label={t.footer_social_facebook || "Mikaty on Facebook"}
@@ -70,7 +70,8 @@ const Footer = () => {
         <XLogo size={20} />
       </motion.a>
       <motion.a
-        href="https://instagram.com/mikaty"
+        href="https://www.instagram.com/mikaty.sn?igsh=Y2l1ZTlqc2RpOHZh&utm_source=qr
+"
         target="_blank"
         rel="noopener noreferrer"
         aria-label={t.footer_social_instagram || "Mikaty on Instagram"}
@@ -80,7 +81,8 @@ const Footer = () => {
         <Instagram size={20} />
       </motion.a>
       <motion.a
-        href="https://linkedin.com/company/mikaty"
+        href="https://www.linkedin.com/company/mikatyofficial/
+"
         target="_blank"
         rel="noopener noreferrer"
         aria-label={t.footer_social_linkedin || "Mikaty on LinkedIn"}

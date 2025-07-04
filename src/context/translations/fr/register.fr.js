@@ -39,7 +39,7 @@ export const fr_register = {
   fullNamePlaceholder: "Entrez votre nom complet",
   phoneNumberPlaceholder: "Entrez votre numéro de téléphone",
   
-  joinWaitingListButton: "Rejoindre la liste d'attente",
+  joinWaitingListButton: "Rejoignez la Newsletter de Mikaty",
   joiningButtonText: "Inscription en cours...",
   waitingListInfoText: "Nous vous informerons par SMS lorsque l'application sera prête !",
 };
