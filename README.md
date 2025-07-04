@@ -87,5 +87,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 
-Your Name - [@linkedin](https://www.linkedin.com/company/mikatyofficial/)
+Mikaty - [@linkedin](https://www.linkedin.com/company/mikatyofficial/)
 Project Link: [https://github.com/mbikedev/mikaty](https://github.com/yourusername/mikaty) 
